@@ -26,10 +26,27 @@
 
   </body>
   <script>
-    const myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
-    const list = document.createElement('ul');
+    let myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+    // const list = document.createElement('ul');
+    let list = document.getElementById("myList");
 
     // Add your code here
+
+    for (i = 0; i < myArray.length; ++i) {
+      let li = document.createElement('li');
+      li.innerText = myArray[i];
+      list.appendChild(li);
+    }
+
+    //for (let item in myArray) {
+      
+      // let list = item.array[i];
+      // let list = document.createElement('li');
+      // list.innerText = myArray[item];
+      // list.appendChild(list);
+
+      //console.log(myArray[item]);
+    //}
 
     // Don't edit the code below here!
 
